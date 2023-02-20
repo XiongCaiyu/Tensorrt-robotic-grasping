@@ -7,9 +7,9 @@ Sulabh Kumra, Shirin Joshi, Ferat Sahin
 [arxiv](https://arxiv.org/abs/1909.04810) | [video](https://youtu.be/cwlEhdoxY4U)
 
 ## Introduction
-- The 01 folder contains some pictures of the related datasets
-- Onnxtotrt.py is used to convert grcnn's model files to ONNX
-- Onnx-tensorrt needs to be downloaded to convert onnx to TRT files
+- The 01 folder contains some pictures of the related datasets.
+- Onnxtotrt.py is used to convert grcnn's model files to ONNX.
+- Onnx-tensorrt needs to be downloaded to convert onnx to TRT files.
 - This example only uses rgb images to train the network, you can use rgbd images to train the network, but you need to modify the inferencetest.py and predict.py related content.In order for users to modified by themselves, the onnx-tensorrt and tensorrt used in this environment are also uploaded to the author's GitHub repository.
 
 ## Tested environment
