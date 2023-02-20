@@ -31,10 +31,10 @@ $ conda activate pt12
 ### (optional)Additional development
 Download tensorrt from BaiDuDisk
 ```bash
-$ https://pan.baidu.com/s/11_D2akJgTMiBf66PiiKJhg?pwd=p84d 
-$ password = p84d
+$ https://pan.baidu.com/s/1Ln8BNA95-FMZjFUZ3qXphQ?pwd=ltjy 
+$ password = ltjy
 ```
-Uzip and remember to add PATH and LI_LIBRARY_PATH to your bashrc
+Uzip and remember to add PATH and LD_LIBRARY_PATH to your bashrc
 
 Download onnx-tensorrt kit
 ```bash
