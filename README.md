@@ -28,6 +28,24 @@ activate enviroment
 ```bash
 $ conda activate pt12
 ```
+### (optional)Additional development
+Download tensorrt from BaiDuDisk
+```bash
+$ https://pan.baidu.com/s/11_D2akJgTMiBf66PiiKJhg?pwd=p84d 
+$ password = p84d
+```
+Uzip and remember to add PATH and LI_LIBRARY_PATH to your bashrc
+
+Download onnx-tensorrt kit
+```bash
+$ git clone https://github.com/onnx/onnx-tensorrt.git
+$ git checkout 8.0-GA
+$ cd onnx-tensorrt
+$ mkdir build && cd build
+$ cmake .. -DTENSORRT_ROOT=<your tensorrt PATH>
+$ make -j8
+$ sudo make install
+```
 
 ##  Requirement
 - numpy
