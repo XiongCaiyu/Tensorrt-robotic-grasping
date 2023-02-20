@@ -13,7 +13,7 @@ Sulabh Kumra, Shirin Joshi, Ferat Sahin
 - This example only uses rgb images to train the network, you can use rgbd images to train the network, but you need to modify the inferencetest.py and predict.py related content.In order for users to modified by themselves, the onnx-tensorrt and tensorrt used in this environment are also uploaded to the author's GitHub repositories.
 
 ## Tested environment
-Ubuntu18.04+cuda11.3+cudnn8.6.0+python3.8+torch1.12.0
+Ubuntu18.04+cuda11.3+cudnn8.6.0+python3.8+torch1.12.0+TensorRT8.5.2.2
 
 ## Installation
 git clone
