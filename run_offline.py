@@ -16,13 +16,13 @@ logging.basicConfig(level=logging.INFO)
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Evaluate network')
-    parser.add_argument('--network', type=str,
+    parser.add_argument('--network', type=str,default = 'trained-models/epoch_02_iou_0.93',
                         help='Path to saved network to evaluate')
-    parser.add_argument('--rgb_path', type=str, default='cornell/08/pcd0845r.png',
+    parser.add_argument('--rgb_path', type=str, default='01/pcd0101r.png',
                         help='RGB Image path')
-    parser.add_argument('--depth_path', type=str, default='cornell/08/pcd0845d.tiff',
+    parser.add_argument('--depth_path', type=str, default='01/pcd0101d.tiff',
                         help='Depth Image path')
-    parser.add_argument('--use-depth', type=int, default=1,
+    parser.add_argument('--use-depth', type=int, default=0,
                         help='Use Depth image for evaluation (1/0)')
     parser.add_argument('--use-rgb', type=int, default=1,
                         help='Use RGB image for evaluation (1/0)')
@@ -62,9 +62,9 @@ if __name__ == '__main__':
     with torch.no_grad():
         xc = x.to(device)
         pred = net.predict(xc)
-
         q_img, ang_img, width_img = post_process_output(pred['pos'], pred['cos'], pred['sin'], pred['width'])
-
+      #  print("q_img : {}".format(q_img))
+        # print(q_img.shape)
         if args.save:
             save_results(
                 rgb_img=img_data.get_rgb(rgb, False),
@@ -82,4 +82,5 @@ if __name__ == '__main__':
                          grasp_angle_img=ang_img,
                          no_grasps=args.n_grasps,
                          grasp_width_img=width_img)
+            plt.pause(0)
             fig.savefig('img_result.pdf')

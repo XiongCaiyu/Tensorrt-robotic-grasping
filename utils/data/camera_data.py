@@ -71,13 +71,12 @@ class CameraData:
             rgb_img = self.get_rgb(img=rgb)
 
         if self.include_depth and self.include_rgb:
-            x = self.numpy_to_torch(
-                    np.concatenate(
+            x = self.numpy_to_torch(np.concatenate(
                         (np.expand_dims(depth_img, 0),
                          np.expand_dims(rgb_img, 0)),
                         1
-                    )
-                )
+                    ))
+                
         elif self.include_depth:
             x = self.numpy_to_torch(depth_img)
         elif self.include_rgb:

@@ -191,5 +191,5 @@ def save_results(rgb_img, grasp_q_img, grasp_angle_img, depth_img=None, no_grasp
     plt.colorbar(plot)
     fig.savefig('results/width.png')
 
-    fig.canvas.draw()
-    plt.close(fig)
+    # fig.canvas.draw()
+    # plt.close(fig)
