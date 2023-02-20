@@ -1,4 +1,4 @@
-# Tensorrt-robotiic-grasping
+# Tensorrt-robotic-grasping
 This example deploys Tensorrt into the code of Antipodal Robotic Grasp：
 ## Antipodal Robotic Grasping using Generative Residual Convolutional Neural Network
 
