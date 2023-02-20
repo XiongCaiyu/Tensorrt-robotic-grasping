@@ -10,7 +10,7 @@ Sulabh Kumra, Shirin Joshi, Ferat Sahin
 - The 01 folder contains some pictures of the related datasets.
 - Onnxtotrt.py is used to convert grcnn's model files to ONNX.
 - Onnx-tensorrt needs to be downloaded to convert onnx to TRT files.
-- This example only uses rgb images to train the network, you can use rgbd images to train the network, but you need to modify the inferencetest.py and predict.py related content.In order for users to modified by themselves, the onnx-tensorrt and tensorrt used in this environment are also uploaded to the author's GitHub repository.
+- This example only uses rgb images to train the network, you can use rgbd images to train the network, but you need to modify the inferencetest.py and predict.py related content.In order for users to modified by themselves, the onnx-tensorrt and tensorrt used in this environment are also uploaded to the author's GitHub repositories.
 
 ## Tested environment
 Ubuntu18.04+cuda11.3+cudnn8.6.0+python3.8+torch1.12.0
