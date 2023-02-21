@@ -39,8 +39,9 @@ Uzip and remember to add PATH and LD_LIBRARY_PATH to your bashrc
 Download onnx-tensorrt kit
 ```bash
 $ git clone https://github.com/onnx/onnx-tensorrt.git
-$ git checkout 8.0-GA
 $ cd onnx-tensorrt
+$ git checkout 8.0-GA
+$ git submodule update --init
 $ mkdir build && cd build
 $ cmake .. -DTENSORRT_ROOT=<your tensorrt PATH>
 $ make -j8
