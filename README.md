@@ -29,7 +29,9 @@ activate enviroment
 $ conda activate pt12
 ```
 install Pytorch
+
 [Pytorch=1.12.0](https://pytorch.org/)
+
 ### (optional)Additional development
 Download tensorrt from BaiDuDisk
 ```bash
